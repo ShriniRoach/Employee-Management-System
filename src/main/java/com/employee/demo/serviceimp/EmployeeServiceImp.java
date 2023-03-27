@@ -51,15 +51,5 @@ public class EmployeeServiceImp implements EmployeeService {
 	public List<Employee> getAllEmployee() {		
 		return eRepo.findAll();
 	}
-
-	@Override
-	public User verifyUser(User user) {
-		List<User> ulist=uRepo.findAll();
-		for(User u:ulist) {
-			if(user.getUsername()==u.getUsername()) {
-
-			}
-		}
-		return null;
-	}    
+  
 }
