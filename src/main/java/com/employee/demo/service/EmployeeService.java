@@ -11,5 +11,4 @@ public interface EmployeeService {
     void deleteEmployee(int eid);
     Employee getEmployee(int eid);
     List<Employee> getAllEmployee();
-    User verifyUser(User user);
 }
