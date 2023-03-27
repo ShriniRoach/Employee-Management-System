@@ -17,8 +17,7 @@ public class EmployeeServiceImp implements EmployeeService {
 	@Autowired
 	private EmployeeRepo eRepo;
 	@Autowired
-	private UserRepo
-	uRepo;
+	private UserRepo uRepo;
 
 	@Override
 	public Employee addEmployee(Employee employee) {
