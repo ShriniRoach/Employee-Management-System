@@ -1,0 +1,53 @@
+body{
+    font-family: sans-serif;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 40px;
+}
+.login{
+    margin-top: 50px;
+    text-align: center;
+    width: 400px;
+    background-color: rgb(136, 255, 144);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 1px;
+}
+.input{
+    padding-left: 10px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    transition: scale .5s;
+}
+.input:hover{
+    scale: 1.03;
+}
+.submit{
+    width: 70px;
+    height: 35px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: rgb(222, 222, 222);
+}
+.submit:hover{
+    color: white;
+    cursor: pointer;
+}
+h3{
+    font-size: 15px;
+    color: rgb(255, 91, 91);
+    margin-bottom: 10px;
+    font-weight: normal;
+}

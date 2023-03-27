@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+body{
+    background: rgb(204, 204, 204); 
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 10px 50px;
+    background-color: rgb(185, 223, 255);
+}
+.addform{
+    background-color: aliceblue;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 30px;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    padding-left: 10px;
+}
+.form:focus{
+    outline: none;
+}
+.goback{
+    width: 70px;
+    height: 30px;
+    color: white;
+    background: rgb(73, 73, 252);
+    border: none;
+    border-radius: 5px;
+}
+.addsubmit{
+    margin-left: 120px;
+    margin-top: 10px;
+    height: 35px;
+    width: 80px;
+    border: none;
+    background-color: rgb(73, 73, 252);
+    border-radius: 5px;
+    color: white;
+}
+.select{
+    width: 262px;
+    height: 40px;
+    padding-left: 7px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+.select:focus{
+ outline: none;
+}
