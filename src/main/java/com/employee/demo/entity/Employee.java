@@ -13,9 +13,9 @@ public class Employee
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int eid;
 	private String name;
-//	@Column(unique=true)
+	@Column(unique=true)
 	private long mobile;
-//	@Column(unique=true)
+	@Column(unique=true)
 	private String emailID;
 	@Column(name="designation")
 	private String job;
