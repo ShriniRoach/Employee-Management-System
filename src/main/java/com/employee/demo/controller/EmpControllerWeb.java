@@ -17,8 +17,6 @@ public class EmpControllerWeb {
 	@Autowired
 	EmployeeService service;
 	@Autowired
-	EmployeeRepo eRepo;
-	@Autowired
 	UserRepo uRepo;
 	int id;
 	
@@ -62,10 +60,38 @@ public class EmpControllerWeb {
 		model.addAttribute("ename", employee.getName());
 		model.addAttribute("emobile", employee.getMobile());
 		model.addAttribute("eemail", employee.getEmailID());
+		
 		model.addAttribute("ejob", employee.getJob());
+		if(employee.getJob().equals("Java Developer")) {
+			model.addAttribute("ejob2","SQL Developer");
+			model.addAttribute("ejob3","Web Developer");
+			model.addAttribute("ejob4","Python Developer");
+		}
+		else if(employee.getJob().equals("SQL Developer")) {
+			model.addAttribute("ejob2","Java Developer");
+			model.addAttribute("ejob3","Web Developer");
+			model.addAttribute("ejob4","Python Developer");
+		}
+		else if(employee.getJob().equals("Web Developer")) {
+			model.addAttribute("ejob2","Java Developer");
+			model.addAttribute("ejob3","SQL Developer");
+			model.addAttribute("ejob4","Python Developer");
+		}
+		else {
+			model.addAttribute("ejob2","Java Developer");
+			model.addAttribute("ejob3","SQL Developer");
+			model.addAttribute("ejob4","Web Developer");
+		}
+		
 		model.addAttribute("egender", employee.getGender());
+		if(employee.getGender().equals("Male"))
+			model.addAttribute("egender2","Female");
+		else
+			model.addAttribute("egender2","Male");
+		
 		model.addAttribute("eaddress", employee.getAddress());
 		model.addAttribute("esalary", employee.getSalary());
+		
 		return "updateemp.jsp";
 	}
 	
